@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use R2LDM, please cite the IROS 2025 paper."
+title: "R2LDM: An Efficient 4D Radar Super-Resolution Framework Leveraging Diffusion Model"
+type: software
+license: Apache-2.0
+authors:
+  - family-names: Zheng
+    given-names: Boyuan
+  - family-names: Lu
+    given-names: Shouyi
+  - family-names: Huang
+    given-names: Renbo
+  - family-names: Huang
+    given-names: Minqing
+  - family-names: Lu
+    given-names: Fan
+  - family-names: Tian
+    given-names: Wei
+  - family-names: Zhuo
+    given-names: Guirong
+  - family-names: Xiong
+    given-names: Lu
+identifiers:
+  - type: doi
+    value: 10.1109/IROS60139.2025.11246739
+  - type: other
+    value: arXiv:2503.17097
+    description: arXiv preprint
+url: "https://github.com/NathanDrake67/R2LDM"
+repository-code: "https://github.com/NathanDrake67/R2LDM"
+preferred-citation:
+  type: conference-paper
+  title: "R2LDM: An Efficient 4D Radar Super-Resolution Framework Leveraging Diffusion Model"
+  authors:
+    - family-names: Zheng
+      given-names: Boyuan
+    - family-names: Lu
+      given-names: Shouyi
+    - family-names: Huang
+      given-names: Renbo
+    - family-names: Huang
+      given-names: Minqing
+    - family-names: Lu
+      given-names: Fan
+    - family-names: Tian
+      given-names: Wei
+    - family-names: Zhuo
+      given-names: Guirong
+    - family-names: Xiong
+      given-names: Lu
+  collection-title: "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  year: 2025
+  start: "769"
+  end: "776"
+  doi: 10.1109/IROS60139.2025.11246739

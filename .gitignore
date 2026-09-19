@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.dll
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and packaging
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Native/CUDA build products
+*.o
+*.obj
+*.a
+*.lib
+*.ninja
+.ninja_*
+utils/tmp/
+
+# Experiments and generated outputs
+/runs/
+/logs/
+/outputs/
+/metric_results/
+/checkpoints/
+/ckpt/
+*.pth
+*.pt
+*.ckpt
+*.bin
+time_log.txt
+
+# Datasets and copied third-party source trees
+/datasets/
+/newdata/
+/apex/
+/spconv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
