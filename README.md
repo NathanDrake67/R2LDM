@@ -1,6 +1,6 @@
 # R2LDM
 
-Official implementation of **R2LDM: An Efficient 4D Radar Super-Resolution Framework Leveraging Diffusion Model** (IROS 2025).
+ **R2LDM: An Efficient 4D Radar Super-Resolution Framework Leveraging Diffusion Model** (IROS 2025).
 
 <p align="center">
   <img
