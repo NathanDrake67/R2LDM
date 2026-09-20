@@ -1,6 +1,5 @@
-# R2LDM
+# R2LDM: An Efficient 4D Radar Super-Resolution Framework Leveraging Diffusion Model（IROS 2025）官方实现
 
-**R2LDM: An Efficient 4D Radar Super-Resolution Framework Leveraging Diffusion Model**（IROS 2025）官方实现。
 
 <p align="center">
   <img
@@ -49,7 +48,7 @@ conda activate r2ldm
 
 当前入口脚本需要预处理后的 View-of-Delft 风格数据：
 
-- LiDAR 文件：小端 `float32`，形状为 `N x 4`；
+- LiDAR 文件：`float32`，形状为 `N x 4`；
 - Radar 文件：`float32`，形状为 `N x 7`；
 - R2LDM 从两者中读取 XYZ 三列。
 
@@ -79,13 +78,12 @@ datasets/VoD/
 
 正式论文报告：在单张 NVIDIA RTX 2080 Ti、batch size 为 1、AdamW 优化器下，训练设置如下。
 
-| 阶段 | 训练模块 | 初始学习率 | 论文报告的训练时长 | 论文是否报告 epoch 数 |
+| 阶段 | 训练模块 | 初始学习率 | 论文报告的训练时长 | 默认 epoch 数 |
 | --- | --- | ---: | ---: | --- |
-| 阶段 1 | LPCR | `1e-3` | 约 9 小时 | 未报告 |
-| 阶段 2 | LVDM | `1e-4` | 约 21 小时 | 未报告 |
+| 阶段 1 | LPCR | `1e-3` | 约 9 小时 | 30 |
+| 阶段 2 | LVDM | `1e-4` | 约 21 小时 | 45 |
 
-论文**没有给出 epoch 数**。本仓库在 `STAGE_PRESETS` 中使用 LPCR 30 个 epoch、LVDM 45 个 epoch 作为代码默认值；这两个数字是仓库默认训练预算，不应写成论文中明确报告的参数。
-
+本仓库在 `STAGE_PRESETS` 中使用 LPCR 30 个 epoch、LVDM 45 个 epoch 作为代码默认值；
 ### 阶段 1：LPCR
 
 ```bash
