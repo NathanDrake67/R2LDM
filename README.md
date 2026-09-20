@@ -79,10 +79,10 @@ Split files contain one `<sequence>/<frame>` entry per line. Their default paths
 
 The IROS paper reports the following implementation details on one NVIDIA RTX 2080 Ti with batch size 1 and AdamW:
 
-| Stage | Module trained | Initial learning rate | Reported training time | Epoch count |
-| --- | --- | ---: | ---: | --- |
-| 1 | LPCR | `1e-3` | about 9 hours | 30 |
-| 2 | LVDM | `1e-4` | about 21 hours | 45 |
+| Stage | Module trained | Initial learning rate | Reported training time | Repository default epochs |
+| :---: | :------------: | :-------------------: | :--------------------: | :---------: |
+|   1   |      LPCR      |        `1e-3`         |     about 9 hours      |     30      |
+|   2   |      LVDM      |        `1e-4`         |     about 21 hours     |     45      |
 
 The paper does **not** specify epoch counts. The public implementation uses 30 epochs for LPCR and 45 epochs for LVDM as repository defaults in `STAGE_PRESETS`; these are code defaults, not values claimed by the paper.
 
